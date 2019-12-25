@@ -16,5 +16,13 @@ module.exports = {
       email: Joi.string().required(),
       password: Joi.string().required()
     }
+  },
+  createBlog: {
+    body: {
+      title: Joi.string().required(),
+      description: Joi.string().required(),
+      author: Joi.string().required(),
+
+    }
   }
 }
